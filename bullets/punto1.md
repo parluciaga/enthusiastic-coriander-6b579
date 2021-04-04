@@ -37,7 +37,6 @@ seo:
       value: images/iconos_bullets/BULL_B_02.png
       relativeUrl: true
 ---
-|
 # Tecnología avanzada de retiro de residuos
 
 Ndfgdsgsunca nos verás trapear tus suelos sucios, esto sólo redistribuye la suciedad. Inyección y extracción es lo que usamos, así se retira toda la suciedad usando el agua como sistema de filtrado. Esto retiene un altísimo porcentaje de las partículas de suciedad, las que son eliminadas con el agua. Limpieza profunda de verdad.

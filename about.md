@@ -14,8 +14,8 @@ sections:
       enable e-commerce on Planty, you’ll need to [sign up for
       Snipcart](http://bit.ly/2YzKmhP). Testing is forever free, no credit card
       required.
-  - type: bulletpoints_section
-    section_id: bulletpoints_section
+  - type: bullets_section
+    section_id: bullets_section
     bulletpoints:
       - title: We love plants
         description: >-

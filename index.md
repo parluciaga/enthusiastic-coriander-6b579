@@ -11,13 +11,13 @@ sections:
       # DeepCleaners
 
       Limpieza profunda, de verdad.
-    actions:
-      - title: See all items
-        url: /store
-        arrow: true
-        style: primary
+    # actions:
+    #   - title: See all items
+    #     url: /store
+    #     arrow: true
+    #     style: primary
   - type: bullets_section
-    section_id: best_sellers_section
+    section_id: bullets_section
     title: Quienes Somos
     icon: true
     light_title: true
