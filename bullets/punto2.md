@@ -2,10 +2,10 @@
 layout: product
 id: '2'
 price: '99.00'
-title: Integer porta
-description: Suspendisse efficitur eget erat sit amet efficitur.
-default_thumbnail_image: images/plant2.jpg
-default_original_image: images/plant2-lg.jpg
+title: Productos Autorizados por el ISP
+description: Sólo usamos productos de limpieza autorizados por el ISP, de esta manera estamos seguros que son inocuos para tu familia y tus colaboradores. Además, estos productos son de alto estándar a nivel mundial, usamos un solo origen, de una de las empresas más reconocidas a nivel mundial.
+default_thumbnail_image: images/iconos_bullets/BULL_B_03.png
+default_original_image: images/iconos_bullets/BULL_B_03.png
 order: 2
 category: category/cactuses.md
 seo:
