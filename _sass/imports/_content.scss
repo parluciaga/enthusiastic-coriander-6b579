@@ -1,7 +1,11 @@
 .content {
     @include container-properties;
     padding-top: 101px;
-
+    background-repeat: repeat;
+    background-color: $color_active;
+    background-size: 500px;
+    background-position: top left;
+    
     &__row {
         @include container-item-properties;
         margin-bottom: 50px;

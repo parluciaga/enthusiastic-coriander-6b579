@@ -2,15 +2,16 @@
 layout: product
 id: '1'
 price: '49.40'
-title: Nulla suscipit
+title: Usamos tecnología avanzada de retiro de residuos
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit velit
-  lectus, vitae efficitur quam mollis eget. Integer porta at nisl eget
-  tincidunt.
-default_thumbnail_image: images/plant1.jpg
-default_original_image: images/plant1-lg.jpg
+  Nunca nos verás trapear tus suelos sucios, esto sólo redistribuye la suciedad. Inyección y extracción es lo que usamos, así se retira toda la suciedad usando el agua como sistema de filtrado. Esto retiene un altísimo porcentaje de las partículas de suciedad, las que son eliminadas con el agua. Limpieza profunda de verdad.
+
+  En suelos alfombrados, realizamos una etapa previa con este sistema, para luego lavar las alfombras y volver a extraer la suciedad. Limpieza profunda de verdad.
+
+default_thumbnail_image: images/iconos_bullets/BULL_B_02.png
+default_original_image: images/iconos_bullets/BULL_B_02.png 
 featured: true
-order: 1
+order: 0
 category: category/bigplants.md
 seo:
   title: Nulla suscipit
