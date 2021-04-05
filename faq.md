@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: Preguntas Frecuentes
 layout: advanced
 page_css_class: gray-background
 sections:
@@ -57,7 +57,7 @@ sections:
     email: geeks@snipcart.com
     mapUrl: 'https://goo.gl/maps/g6za62bN9BHrNTVt5'
 seo:
-  title: FAQ
+  title: Preguntas Frecuentes
   description: This is the faq page
   extra:
     - name: 'og:type'

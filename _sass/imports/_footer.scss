@@ -1,6 +1,6 @@
 .footer {
   @include container-properties;
-  background-color: $color_dark;
+  background-color: $color_darker;
 
   &__container { 
       @include container-item-properties;
@@ -54,7 +54,7 @@
 @each $palette in map-keys($theme_palettes) {
   .palette-#{$palette} {
     .footer {
-      background-color: map-deep-get($theme-palettes, $palette, "dark");
+      background-color: map-deep-get($theme-palettes, $palette, "darker");
 
       &__nav-link,
       &__legal-notice {

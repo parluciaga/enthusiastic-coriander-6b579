@@ -2,10 +2,7 @@
   &__section {
     &:last-child {
       margin-bottom: 0;
-
-      picture {
-        background-color: $color_dark;
-      }
+      background-color: #211cbe;
     }
   }
 
@@ -74,6 +71,7 @@
 @each $palette in map-keys($theme_palettes) {
   .palette-#{$palette} {
     .promo {
+      background-color: map-deep-get($theme-palettes, $palette, "dark");
       &__section {
         &:last-child {
           picture {
@@ -83,7 +81,7 @@
       }
 
       &__message-container {
-        background-color: map-deep-get($theme-palettes, $palette, "active");
+        background-color: map-deep-get($theme-palettes, $palette, "dark");
       }
     }
   }

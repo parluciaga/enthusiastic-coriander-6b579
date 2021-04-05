@@ -1,5 +1,5 @@
 ---
-title: Store
+title: Servicios
 layout: store
 sections:
   - type: store_section
@@ -25,7 +25,7 @@ sections:
       style: secondary
       arrow: true
 seo:
-  title: Store
+  title: Servicios
   description: This is the store page
   extra:
     - name: 'og:type'

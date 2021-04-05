@@ -25,19 +25,14 @@ sections:
       - bullets/punto1.md
       - bullets/punto2.md
       - bullets/punto3.md
-  - type: featured_categories_section
-    section_id: featured_categories_section
-    featured_categories:
-      - category/bigplants.md
-      - category/cactuses.md 
   - type: promotion_section
     section_id: promotion_section
-    title: A new home interior for summer
-    subtitle: from $149.99
-    image: images/promo.jpg
-    background_image: images/leaf.svg
+    title: Sólo hasta el 30 de febrero
+    subtitle: 20% de descuento en plan Deep Full
+    image: images/Home/DEEPFULL.png
+    
     cta:
-      title: Discover
+      title: Ver detalles
       url: /store
       style: secondary
       arrow: true
