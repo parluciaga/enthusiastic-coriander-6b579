@@ -37,29 +37,29 @@ sections:
       style: secondary
       arrow: true
 seo:
-  title: Planty Theme
-  description: The preview of the Planty theme
+  title: DeepCleaners
+  description: Limpieza y sanitización de hogar y oficina
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Planty Theme
+      value: DeepCleaners
       keyName: property
     - name: 'og:description'
-      value: The preview of the Planty theme
+      value: Limpieza y sanitización de hogar y oficina
       keyName: property
     - name: 'og:image'
-      value: images/header.jpg
+      value: images/Logos/LDC_C.jpg
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Planty Theme
+      value: DeepCleaners
     - name: 'twitter:description'
-      value: The preview of the Planty theme
+      value: Limpieza y sanitización de hogar y oficina
     - name: 'twitter:image'
-      value: images/header.jpg
+      value: images/Logos/LDC_C.jpg
       relativeUrl: true
 ---

@@ -3,7 +3,7 @@ layout: product
 id: '2'
 price: '99.00'
 title: Productos Autorizados por el ISP
-description: Sólo usamos productos de limpieza autorizados por el ISP, de esta manera estamos seguros que son inocuos para tu familia y tus colaboradores. Además, estos productos son de alto estándar a nivel mundial, usamos un solo origen, de una de las empresas más reconocidas a nivel mundial.
+description: Proveedores de primer nivel
 default_thumbnail_image: images/iconos_bullets/BULL_B_03.png
 default_original_image: images/iconos_bullets/BULL_B_03.png
 order: 2

@@ -16,13 +16,13 @@ $color_active_dark:   #547567;
 
 // Alternative palettes
 $theme_palettes: (
-  cyan: (
+  blue: (
     lightest:      #f7f9fb,
     lighter:       #f0f4f8,
     light:         #d8e2ed,
-    medium:        #627d98,
-    dark:          #334e68,
-    darker:        #243b53,
+    medium:        #6460D2,
+    dark:          #211cbe,
+    darker:        #131382,
     active:        #54d1db,
     active_light:  #bef8fd,
     active_medium: #38bec9,
@@ -43,8 +43,8 @@ $theme_palettes: (
 );
 
 // Font family
-$font_family_primary:   'Open Sans', sans-serif;
-$font_family_secondary: 'Lato', sans-serif;
+$font_family_primary:   'Roboto', sans-serif;
+$font_family_secondary: 'Oswald', sans-serif;
 
 // Font sizes
 $font_size_xxlarge: 64px;

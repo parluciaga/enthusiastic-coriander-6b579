@@ -2,7 +2,7 @@
 layout: product
 id: '3'
 title: Somos una empresa flexible, adaptable
-description: 'Realizamos una visita previa cuando tu caso lo requiere. Aún así te adelantamos un valor referencial para no prolongar los misterios y estar siempre a tu lado y resolver tus requerimientos. A la medida y teniendo siempre en mente que puedas desenvolverte en un ambiente limpio, de verdad.'
+description: 'Valor referencial + visita previa si es necesario'
 default_thumbnail_image:  images/iconos_bullets/BULL_B_01.png
 default_original_image: images/iconos_bullets/BULL_B_01 .png
 featured: true

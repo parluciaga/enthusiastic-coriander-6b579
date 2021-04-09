@@ -28,7 +28,7 @@
         }
 
         &--dark {
-            color: $color_dark;
+            color: $color_lighter;
         }
 
         &--medium {
@@ -61,6 +61,7 @@
                     color: map-deep-get($theme-palettes, $palette, "medium");
                 }
             }
+            background-color: map-deep-get($theme-palettes, $palette, "medium");
         }
     }
 }
