@@ -3,7 +3,7 @@ layout: bullet
 id: '1'
 title: Usamos tecnología avanzada de retiro de residuos
 description: >
-  Inyección y extracción: Retiramos toda la suciedad usando agua para filtrar. 
+  Inyección y extracción: Retiramos toda la suciedad usando agua para filtrar.. 
 default_thumbnail_image: images/iconos_bullets/BULL_B_02.png
 default_original_image: images/iconos_bullets/BULL_B_02.png 
 featured: true
