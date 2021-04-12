@@ -7,6 +7,7 @@ sections:
   - type: hero_section
     section_id: hero_section
     background_image_opacity: 100
+    background_image: images/Home/imagen home banner/USAR ESTA VERSION _ imagen home sin fondo gorro marcas.png
     content: >-
       # DeepCleaners
 
