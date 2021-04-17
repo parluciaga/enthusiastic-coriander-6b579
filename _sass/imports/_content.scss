@@ -1,7 +1,7 @@
 .content {
     @include container-properties;
     padding-top: 101px;
-    background-repeat: repeat;
+    background-repeat: round;
     background-color: $color_active;
     background-size: 500px;
     background-position: top left;

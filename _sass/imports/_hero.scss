@@ -1,10 +1,10 @@
 .hero {
-    background: linear-gradient( #4f4fef, #201cbd );
+    background: linear-gradient( #3271ae, #3217a0 );
     width: 100%;
-    margin-top: -101px;
-    padding-top: 282px;
-    padding-bottom: 250px;
-    margin-bottom: -50px;
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 350px;
+    margin-bottom: 0px;
     position: relative;
 
     @include smaller-than-max-width {
@@ -39,8 +39,8 @@
     }
 
     &__bg-img {
-        background-repeat: repeat-x;
-        background-size: 100%, 600px;
+        background-repeat: no-repeat;
+        background-size: 100%, 1000px;
         bottom: 0;
         left: 0;
         position: absolute;
