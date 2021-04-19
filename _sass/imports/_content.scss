@@ -1,15 +1,16 @@
 .content {
     @include container-properties;
     padding-top: 101px;
-    background-repeat: round;
-    background-color: $color_active;
-    background-size: 500px;
-    background-position: top left;
+    
     
     &__row {
         @include container-item-properties;
         margin-bottom: 50px;
         position: relative;
+        background-color: #3217a0;
+        background-repeat: round;
+        background-size: 500px;
+        background-position: top left;
         &--direction-row { display: flex; flex-direction: row; }
         &--full-width         { max-width: none; padding: 0; }
         &--mb-0         { margin-bottom: 0; }
@@ -22,6 +23,9 @@
         color: $color_medium;
         margin-bottom: $spacing--unit*7;
         font-size: $font_size_large;
+        font-family: 'Work Sans';
+        font-weight: 400;
+        padding-top: 1rem;
 
         &--light {
             color: $color_lighter;
@@ -44,7 +48,7 @@
 }
 
 @each $palette in map-keys($theme_palettes) {
-    .palette-#{$palette} {
+    .palette-#{"" + $palette} {
         .content {
             &__row-title {
                 color: map-deep-get($theme-palettes, $palette, "medium");

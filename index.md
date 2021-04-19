@@ -2,7 +2,6 @@
 layout: home
 title: Home
 white_header: true
-background_image: images/Home/SINFIN_ICO.png
 sections:
   - type: hero_section
     section_id: hero_section
@@ -22,6 +21,7 @@ sections:
     title: Quienes Somos
     icon: true
     light_title: true
+    background_image: images/Home/SINFIN_ICO_T.png
     bullets:
       - bullets/punto1.md
       - bullets/punto2.md
