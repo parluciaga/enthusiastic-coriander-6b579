@@ -1,8 +1,9 @@
 .content {
     @include container-properties;
     padding-top: 101px;
-    
-    
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
     &__row {
         @include container-item-properties;
         margin-bottom: 50px;
@@ -26,6 +27,8 @@
         font-family: 'Work Sans';
         font-weight: 400;
         padding-top: 1rem;
+        margin-right: auto;
+        margin-left: auto;
 
         &--light {
             color: $color_lighter;
@@ -37,12 +40,6 @@
 
         &--medium {
             color: $color_medium;
-        }
-
-        svg {
-            color: inherit;
-            margin-right: 10px;
-            fill: currentColor;
         }
     }
 }

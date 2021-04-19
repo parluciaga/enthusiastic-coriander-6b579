@@ -40,11 +40,12 @@
   }
 
   &__item-image {
-    width: 100%;
+    width: 80%;
     background-size: cover;
     border-radius: $spacing--unit * 3;
     position: relative;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
     cursor: pointer;
     display: block;

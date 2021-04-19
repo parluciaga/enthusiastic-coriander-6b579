@@ -40,8 +40,10 @@
 
     &__bg-img {
         background-repeat: no-repeat;
-        background-size: 100%, 1000px;
+        background-size: contain;
+        padding-top: 47.13%;
         background-position-y: $spacing--unit*10;
+        background-position-x: center;
         bottom: 0;
         left: 0;
         position: absolute;
