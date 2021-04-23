@@ -3,6 +3,8 @@
     padding-top: 101px;
     padding-left: 0px !important;
     padding-right: 0px !important;
+    justify-content: center;
+    text-align: center;
 
     &__row {
         @include container-item-properties;
@@ -17,6 +19,7 @@
         &--mb-0         { margin-bottom: 0; }
         @include smaller-than-tablet {
             overflow: hidden;
+        
         }
     }
 
