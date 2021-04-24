@@ -26,6 +26,15 @@ sections:
       - bullets/punto1.md
       - bullets/punto2.md
       - bullets/punto3.md
+  - type: services_section
+    section_id: services_section
+    title: Nuestros Servicios
+    icon: true
+    light_title: true
+    services:
+      - services/pisos.md
+      - services/sanitizacion.md
+      - services/acaros.md
   - type: promotion_section
     section_id: promotion_section
     title: Sólo hasta el 30 de febrero

@@ -1,0 +1,18 @@
+{% assign service_page = include.service_page %}
+
+<li class="service-grid__item">
+    <figure class="service-grid__item-figure">
+        <a class="service-grid__item-link" href="{{ service_page.url | relative_url }}">
+            
+            {% include picture.html image=service_page.default_thumbnail_image alt=service_page.title cssClass='service-grid__item-image' %}
+        </a>
+        <figcaption>
+            
+            <!-- {% include small_buy_button.html service_page=service_page component='service-grid' %} -->
+        </figcaption>
+    </figure>
+    <div class="service-grid__definition">
+        <a href="{{ service_page.url | relative_url }}"><h3 class="service-grid__title">{{ service_page.title }}</h3></a>
+        <p>{{ service_page.description }}</p>
+    </div>
+</li>

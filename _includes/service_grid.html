@@ -1,0 +1,8 @@
+{% assign site = include.site %}
+{% assign service_pages = include.service_pages %}
+{% assign listCssClass = include.cssClass %}
+<ul class="service-grid {% assign listCssClass_is_not_empty = listCssClass | is_not_empty %}{% if listCssClass_is_not_empty %}{{ listCssClass }}{% endif %}">
+    {% for service_page in service_pages %}            
+        {% include service_grid_item.html service_page=service_page site=site %}        
+    {% endfor %}
+</ul>

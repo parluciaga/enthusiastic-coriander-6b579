@@ -1,4 +1,4 @@
-.bullet-grid {
+.service-grid {
   padding: 0;
   margin: 0;
 
@@ -8,22 +8,24 @@
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   grid-row-gap: 15px;
   grid-column-gap: 15px;
-  font-family: $font_family_primary;
 
   &__definition {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    color: $color_lightest;
-    text-shadow: 1px 1px 2px black, 0 0 1em #211cbe, 0 0 0.2em #211cbe;
+    color: $color_lighter;
+  }
+
+  &__definition a {
+    display: flex;
+    flex-direction: column;
+    color: $color_lighter;
   }
 
   &__title {
-    margin-top: $spacing--unit*1;
+    margin-top: $spacing--unit;
     margin-bottom: $spacing--unit*1;
-    font-size: $font_size_large;
-    font-weight: bolder;
-    color: $color_lighter !important;
+    font-size: $font_size_medium;
+    color: $color_lighter;
   }
 
   &__price {
@@ -41,12 +43,11 @@
   }
 
   &__item-image {
-    width: 80%;
+    width: 150px;
     background-size: cover;
     border-radius: $spacing--unit * 3;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
     padding: 0;
     cursor: pointer;
     display: block;
@@ -57,8 +58,6 @@
 
   &__item-figure {
     position: relative;
-    margin-top: -60px;
-    margin-bottom: -60px;
   }
 
   &__item {
@@ -84,11 +83,11 @@
 
 @each $palette in map-keys($theme_palettes) {
   .palette-#{$palette} {
-    .bullet-grid {
+    .service-grid {
       &__title,
       &__price,
       &__category {
-        color: map-deep-get($theme-palettes, $palette, "darker");
+        color: map-deep-get($theme-palettes, $palette, "lighter");
       }
     }
   }
