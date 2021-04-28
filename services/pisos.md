@@ -1,42 +1,43 @@
 ---
 layout: product
 id: '1'
-price: '400.00'
-title: Limpieza de Pisos
-description: 'Lavado o limpieza de pisos duros, laminados, alfombras de muro a muro'
-default_thumbnail_image: images/iconos/ICOST_A_02.png
-default_original_image: images/iconos/ICOST_A_02.png
+price: '49.40'
+title: Limpieza de pisos duros
+description: >-
+  Lavado con detergente, sistema de inyección y extracción
+default_thumbnail_image: images/iconos/ICOST_A_01.png
+default_original_image: images/iconos/ICOST_A_01.png
 featured: true
-order: 1
-category: category/cactuses.md
+order: 0
+category: category/services.md
 seo:
-  title: Limpieza de Pisos
-  description: 'Lavado o limpieza de pisos duros, laminados, alfombras de muro a muro'
+  title: Nulla suscipit
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Limpieza de Pisos
+      value: Nulla suscipit
       keyName: property
     - name: 'og:description'
-      value: 'Lavado o limpieza de pisos duros, laminados, alfombras de muro a muro'
+      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
       keyName: property
     - name: 'og:image'
-      value: images/iconos/ICOST_A_02.png
+      value: images/plant1-lg.jpg
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Limpieza de Pisos
+      value: Nulla suscipit
     - name: 'twitter:description'
-      value: 'Lavado o limpieza de pisos duros, laminados, alfombras de muro a muro'
+      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
     - name: 'twitter:image'
-      value: images/iconos/ICOST_A_02.png
+      value: images/plant1-lg.jpg
       relativeUrl: true
 ---
 
-# Limpieza de Pisos
+# Nulla suscipit
 
-Lavado o limpieza de pisos duros, laminados, alfombras de muro a muro.
+Aliquam quis laoreet lectus. Proin non mattis nulla, quis posuere mi. Mauris venenatis, magna at pellentesque commodo, lectus risus vehicula elit, nec dignissim nisl sapien id leo. Nulla non pretium metus, vitae finibus lectus. Aliquam in posuere risus. Curabitur ultrices ornare magna porttitor commodo. Curabitur eu tempor orci, sed pretium quam. Vestibulum condimentum, arcu nec pulvinar fringilla, lorem odio varius arcu, in porta tellus eros sed neque. Suspendisse efficitur eget erat sit amet efficitur. Proin maximus nibh eu sapien consequat, non porttitor risus consequat. Donec maximus odio sed nibh convallis luctus.
