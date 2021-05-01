@@ -1,6 +1,7 @@
 .contact {
   &__section {
     display: flex;
+    background: linear-gradient( #319db4, #3317a1 );
     @include smaller-than-tablet {
       flex-direction: column;
     }

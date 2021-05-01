@@ -10,13 +10,13 @@
   grid-column-gap: 15px;
 
   &__definition {
-    position: absolute;
     flex-direction: column;
     color: $color_active;
-    z-index: 10000;
+    z-index: 11000;
     p {
-      padding-left: $spacing-unit*2;
-      padding-right: $spacing-unit*2;
+      padding-left: $spacing--unit*3;
+      padding-right: $spacing--unit*3;
+      font-weight: 200;
     }
   }
 
@@ -30,10 +30,10 @@
   &__title {
     margin-top: $spacing--unit;
     margin-bottom: $spacing--unit*1;
-    font-size: $font_size_medium;
+    font-size: $font_size_large;
     color: $color_active;
-    padding-left: $spacing-unit*2;
-    padding-right: $spacing-unit*2;
+    padding-left: $spacing--unit*2;
+    padding-right: $spacing--unit*2;
   }
 
   &__price {
@@ -55,7 +55,7 @@
     background-size: cover;
     border-radius: $spacing--unit * 3;
     position: relative;
-    margin: 0;
+
     padding: 0;
     cursor: pointer;
     display: block;
@@ -70,8 +70,13 @@
   }
 
   &__item {
+    padding: $spacing--unit*2;
     width: 100%;
+    background-size: cover;
+    border-radius: $spacing--unit * 4;
+    box-shadow: 0px 20px 52px rgba(0, 0, 0, 0.31);
     list-style: none;
+    background-color: $color_lighter;
     margin: 0;
     margin-bottom: $spacing--unit*5;
     user-select: none; // Prevents selecting text when scroll is active

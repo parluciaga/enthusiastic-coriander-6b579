@@ -3,7 +3,7 @@ title: Servicios
 layout: category
 order: 1
 seo:
-  title: Servicios
+  title: Nuestros Servicios
   description: Limpieza para hogar y oficina
   extra:
     - name: 'og:type'

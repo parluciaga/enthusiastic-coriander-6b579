@@ -27,7 +27,6 @@
         color: $color_lighter;
         margin-bottom: $spacing--unit*4;
         font-size: $font_size_large;
-        font-family: 'Work Sans';
         font-weight: 400;
         padding-top: 1rem;
         margin-right: auto;
@@ -42,7 +41,7 @@
         }
 
         &--medium {
-            color: $color_medium;
+            color: $color_lighter;
         }
     }
 }
@@ -51,7 +50,7 @@
     .palette-#{"" + $palette} {
         .content {
             &__row-title {
-                color: map-deep-get($theme-palettes, $palette, "medium");
+                color: map-deep-get($theme-palettes, $palette, "lighter");
 
                 &--light {
                     color: map-deep-get($theme-palettes, $palette, "lighter");

@@ -35,12 +35,18 @@ sections:
     title: Sólo hasta el 30 de febrero
     subtitle: 20% de descuento en plan Deep Full
     image: images/Home/DEEPFULL.png
-    
     cta:
       title: Ver detalles
       url: /store
       style: secondary
       arrow: true
+  - type: contact_section
+    section_id: contact_section
+    title: Escribenos
+    subtitle: Llena el formulario para que podamos cotizar lo que necesitas
+    address: Dirección
+    phone: Teléfono
+    email: Correo
 seo:
   title: DeepCleaners
   description: Limpieza y sanitización de hogar y oficina

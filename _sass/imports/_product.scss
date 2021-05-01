@@ -102,6 +102,7 @@
         
         @include smaller-than-tablet { 
             font-size: $font_size_large;
+            color: $color_lighter;
         }
     }
 
