@@ -14,9 +14,11 @@
     color: $color_active;
     z-index: 11000;
     p {
-      padding-left: $spacing--unit*3;
-      padding-right: $spacing--unit*3;
+      padding-left: $spacing--unit*5;
+      padding-right: $spacing--unit*5;
       font-weight: 200;
+      display: block;
+      line-height: 2rem;
     }
   }
 

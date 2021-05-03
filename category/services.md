@@ -1,5 +1,5 @@
 ---
-title: Servicios
+title: Nuestros Servicios
 layout: category
 order: 1
 seo:
