@@ -1,13 +1,14 @@
 .contact {
   @include container-properties;
+
   padding-left: 0px !important;
   padding-right: 0px !important;
   justify-content: center;
   text-align: center;
 
   &__section {
-    display: flex;
     background: linear-gradient(#319db4, #3317a1);
+    max-width: none;
     @include smaller-than-tablet {
       flex-direction: column;
     }
@@ -20,7 +21,6 @@
 
   &__image {
     width: 0;
-    flex: 0.2;
     object-fit: cover;
     @include smaller-than-tablet {
       max-height: 300px;
@@ -29,20 +29,10 @@
     }
   }
 
-  &__subtitle {
-    font-size: $font_size_large;
-    margin-bottom: $spacing--unit * 6;
-    @include smaller-than-tablet {
-      font-size: $font_size_medium;
-    }
-    font-weight: 100;
-  }
-
-  &__row-title {
+  &__form {
     color: $color_lighter;
     margin-bottom: $spacing--unit;
-    font-size: $font_size_xlarge;
-    font-weight: 700;
+    font-weight: 400;
     padding-top: 1rem;
     margin-right: auto;
     margin-left: auto;
@@ -62,10 +52,13 @@
 
   &__title {
     line-height: 56px;
+    width: 100%;
+    display: block;
     font-family: $font_family_primary;
     font-size: 46px;
     color: $color_darker;
     margin-bottom: 50px;
+    margin-top: 30px;
     @include smaller-than-tablet {
       font-size: $font_size_medium;
       margin-bottom: 25px;
@@ -73,11 +66,26 @@
     }
   }
 
+  &__subtitle {
+    font-size: $font_size_large;
+    margin-bottom: $spacing--unit * 6;
+    @include smaller-than-tablet {
+      font-size: $font_size_medium;
+    }
+    font-weight: 100;
+    padding-left: $spacing--unit*2;
+    padding-right: $spacing--unit*2;
+  }
+
   &__form-input {
     border-radius: $spacing--unit;
     display: block;
     margin-bottom: $spacing--unit*2 ;
     width: 100%;
+    font-size: large;
+    line-height: 1.5rem;
+    padding-left: $spacing--unit*2;
+    padding-right: $spacing--unit*2;
   }
 
   &__form-label {
@@ -87,6 +95,18 @@
     display: block;
     margin-bottom: $spacing--unit;
     margin-top: $spacing--unit;
+  }
+
+  &__form-button {
+    border-radius: $spacing--unit*4;
+    border-width: 3px;
+    border-color: $color_lighter;
+    color: $color_lighter;
+    font-size: $font_size_large;
+    background-color: transparent;
+    padding-left: $spacing--unit*2;
+    padding-right: $spacing--unit*2;
+
   }
 
   &__text-container {

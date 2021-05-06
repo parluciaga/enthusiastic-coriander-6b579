@@ -6,7 +6,7 @@ sections:
   - type: hero_section
     section_id: hero_section
     background_image_opacity: 100
-    background_image: images/Home/imagen home banner/USAR ESTA VERSION 3 _ imagen home sin fondo gorro marcas.png
+    background_image: images/Home/imagen home banner/imagen home lite.png
     content: >-
       # DeepCleaners
 
@@ -39,10 +39,10 @@ sections:
       title: Ver detalles
       url: /store
       style: secondary
-      arrow: true
+      arrow: false
   - type: contact_section
     section_id: contact_section
-    title: Escribenos
+    title: ESCRIBENOS
     subtitle: Llena el formulario para que podamos cotizar lo que necesitas
     address: Dirección
     phone: Teléfono

@@ -8,6 +8,7 @@
 
   display: flex;
   width: 100%;
+  overflow: auto;
 
   picture {
     flex: 1;
@@ -16,7 +17,17 @@
     object-fit: cover;
 
     img {
-      width: 100%;
+      max-width: 100%;
+      max-block-size: 300px;
+    }
+  }
+
+  &__row {
+    &--direction-row { display: flex; flex-direction: row; }
+    &--full-width         { max-width: none; padding: 0; }
+    &--mb-0         { margin-bottom: 0; }
+    @include smaller-than-tablet {
+        overflow: hidden;
     }
   }
 
@@ -24,7 +35,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: $spacing--unit*4;
     flex: 1;
     width: 0;
     padding: 80px;
@@ -47,6 +58,15 @@
     @include smaller-than-tablet {
       font-size: $font_size_medium;
     }
+  }
+
+  &__item {
+    padding: $spacing--unit*2;
+    background-size: cover;
+    list-style: none;
+    margin: 0;
+    margin-bottom: $spacing--unit*3;
+    user-select: none; // Prevents selecting text when scroll is active
   }
 
   @include smaller-than-tablet {

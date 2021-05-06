@@ -8,7 +8,7 @@
 
     &__row {
         @include container-item-properties;
-        margin-bottom: 50px;
+        padding-bottom: 50px;
         position: relative;
         background-color: #3217a0;
         background-repeat: round;
