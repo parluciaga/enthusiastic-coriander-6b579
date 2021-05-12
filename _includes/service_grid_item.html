@@ -1,9 +1,12 @@
 {% assign service_page = include.service_page %}
 
-<li class="service-grid__item">
+<li class="service-grid__item"{% assign background_image_is_not_empty = page.background_image | is_not_empty %}{% if background_image_is_not_empty %}style="background-image: url('{{ page.background_image | relative_url }}')"{% endif %}>
+    <div class="service-grid__definition">
+        <a href="{{ service_page.url | relative_url }}"><h3 class="service-grid__title">{{ service_page.title }}</h3></a>
+        <p>{{ service_page.description }}</p>
+    </div>
     <figure class="service-grid__item-figure">
-        <a class="service-grid__item-link" href="{{ service_page.url | relative_url }}">
-            
+        <a class="service-grid__item-link" href="{{ service_page.url | relative_url }}">         
             {% include picture.html image=service_page.default_thumbnail_image alt=service_page.title cssClass='service-grid__item-image' %}
         </a>
         <figcaption>
@@ -11,8 +14,18 @@
             <!-- {% include small_buy_button.html service_page=service_page component='service-grid' %} -->
         </figcaption>
     </figure>
-    <div class="service-grid__definition">
-        <a href="{{ service_page.url | relative_url }}"><h3 class="service-grid__title">{{ service_page.title }}</h3></a>
-        <p>{{ service_page.description }}</p>
-    </div>
+    
+    {% assign cta_is_not_empty = service_page.cta.title | is_not_empty %}
+   
+                {% assign cta_style = service_page.cta.style | default: 'primary' %}
+                <a class="link service-grid__item-quote"{{ service_page.cta.url }}">
+                    {{ service_page.cta.title }}
+                    {% assign arrow_is_not_empty = service_page.cta.arrow | is_not_empty %}
+                    {% if arrow_is_not_empty %}
+                    <svg width="26" height="14" viewBox="0 0 26 14" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.682 6.079h-22.682v1.712h22.814l-4.574 4.528 1.194 1.182 6.566-6.5-6.566-6.5-1.194 1.182 4.442 4.397z"></path>
+                    </svg>
+                    {% endif %}
+                </a>
+    
 </li>

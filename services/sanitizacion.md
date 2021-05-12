@@ -8,6 +8,11 @@ description: >-
 default_thumbnail_image: images/iconos/ICOST_A_09.png
 default_original_image: images/iconos/ICOST_A_09.png
 featured: true
+cta:
+  title: Cotiza aquí
+  url: /services/sanitizacion/cotizar
+  style: primary
+  arrow: false
 order: 1
 category: category/services.md
 seo:

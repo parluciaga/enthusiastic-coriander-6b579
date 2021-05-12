@@ -8,7 +8,12 @@ default_thumbnail_image: images/iconos/ICOST_A_02.png
 default_original_image: images/iconos/ICOST_A_02.png
 featured: true
 order: 1
-category: category/cactuses.md
+cta:
+  title: Cotiza aquí
+  url: /services/acaros/cotizar
+  style: primary
+  arrow: false
+category: category/services.md
 seo:
   title: Limpieza de Pisos
   description: 'Lavado o limpieza de pisos duros, laminados, alfombras de muro a muro'

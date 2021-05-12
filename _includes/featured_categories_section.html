@@ -4,7 +4,7 @@
     {% assign categories = section.featured_categories %}
     {% for category in categories %}
         {% assign category_page = category | get_page_by_file_path %}
-        <h2 class="content__row-title">{{ category_page.title }}</h2>
+        <h2 class="content__row-title">{{ category_page.title }}123</h2>
         {% assign product_pages = '/services' | get_pages | sort: 'order' %}
         
         {% include product_grid.html product_pages=product_pages category_url=category_page.url site=site %}

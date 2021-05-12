@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: service
 id: '1'
 price: '49.40'
 title: Limpieza de pisos
@@ -10,6 +10,11 @@ default_original_image: images/iconos/ICOST_B_01.png
 background_image: images/iconos/ICOST_A_01.png
 featured: true
 order: 0
+cta:
+  title: Cotiza aquí
+  url: /services/pisos/cotizar
+  style: secondary
+  arrow: false
 category: category/services.md
 seo:
   title: Nulla suscipit

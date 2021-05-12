@@ -1,6 +1,6 @@
 ---
 title: Nuestros Servicios
-layout: category
+layout: service
 order: 1
 seo:
   title: Nuestros Servicios

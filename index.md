@@ -9,13 +9,7 @@ sections:
     background_image: images/Home/imagen home banner/imagen home lite.png
     content: >-
       # DeepCleaners
-
       Limpieza profunda, de verdad.
-    # actions:
-    #   - title: See all items
-    #     url: /store
-    #     arrow: true
-    #     style: primary
   - type: bullets_section
     section_id: bullets_section
     title: Quienes Somos
@@ -26,9 +20,9 @@ sections:
       - bullets/punto1.md
       - bullets/punto2.md
       - bullets/punto3.md
-  - type: featured_categories_section
-    section_id: featured_categories_section
-    featured_categories:
+  - type: services_section
+    section_id: services_section
+    services:
       - category/services.md
   - type: promotion_section
     section_id: promotion_section
