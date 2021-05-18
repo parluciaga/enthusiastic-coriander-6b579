@@ -80,7 +80,8 @@
     background-color: $color_lighter;
     margin: 0;
     margin-bottom: $spacing--unit*5;
-    user-select: none; // Prevents selecting text when scroll is active
+    user-select: none;
+    flex: 1; // Prevents selecting text when scroll is active
   }
 
   &__item-link {
