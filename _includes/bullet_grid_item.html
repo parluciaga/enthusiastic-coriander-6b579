@@ -2,13 +2,13 @@
 
 <li class="bullet-grid__item">
     <figure class="bullet-grid__item-figure">
-        <a class="bullet-grid__item-link" href="{{ bullet_page.url | relative_url }}">
+        <div class="bullet-grid__item-link">
             
             {% include picture.html image=bullet_page.default_thumbnail_image alt=bullet_page.title cssClass='bullet-grid__item-image' %}
-        </a>
+        </div>
     </figure>
     <div class="bullet-grid__definition">
-        <a href="{{ bullet_page.url | relative_url }}"><h3 class="bullet-grid__title">{{ bullet_page.title }}</h3></a>
+        <div ><h3 class="bullet-grid__title">{{ bullet_page.title }}</h3></div>
         <p>{{ bullet_page.description }}</p>
     </div>
 </li>

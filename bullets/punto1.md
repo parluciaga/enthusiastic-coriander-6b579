@@ -5,10 +5,10 @@ title: Usamos tecnología avanzada de retiro de residuos
 description: >
   Inyección y extracción: Retiramos toda la suciedad usando agua para filtrar.. 
 default_thumbnail_image: images/iconos_bullets/BULL_B_02.png
-default_original_image: images/iconos_bullets/BULL_B_02.png 
+default_original_image: images/iconos_bullets/BULL_A_02.png 
 featured: true
 order: 0
-category: category/bigplants.md
+category: category/bullets.md
 seo:
   title: Tecnología avanzada de retiro de residuos
   description: 'Inyección y extracción retiene un altísimo porcentaje de las partículas de suciedad, las que son eliminadas con el agua. Limpieza profunda de verdad'

@@ -6,7 +6,7 @@ title: Limpieza de pisos
 description: >-
   Lavado con detergente, sistema de inyección y extracción
 default_thumbnail_image: images/iconos/ICOST_A_01.png
-default_original_image: images/iconos/ICOST_B_01.png
+default_original_image: images/iconos/ICOST_A_01.png
 background_image: images/iconos/ICOST_A_01.png
 featured: true
 order: 0

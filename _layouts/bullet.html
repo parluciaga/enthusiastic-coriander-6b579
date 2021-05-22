@@ -2,66 +2,34 @@
 layout: body
 ---
 
-    {% assign primary_bg_img_opacity_pct = site.bg_image_primary_opacity | default: 100 %}
-    {% assign primary_bg_img_opacity = primary_bg_img_opacity_pct | times: 0.01 %}
-    <main class="content">
-        <section class="bullet content__row content__row--full-width">
-            <div class="bullet__background-left">
-                {% assign bg_image_primary_is_not_empty = site.bg_image_primary | is_not_empty %}
-                {% if bg_image_primary_is_not_empty %}
-                <div class="bullet__background-left-img" style="background-image: url('{{ site.bg_image_primary | relative_url }}'); opacity: {{ primary_bg_img_opacity }};"></div>
-                {% endif %}
-            </div>
-            {% assign bg_image_secondary_is_not_empty = site.bg_image_secondary | is_not_empty %}
-            {% if bg_image_secondary_is_not_empty %}
-            <div class="bullet__background-right" style="background-image: url('{{ site.bg_image_secondary | relative_url }}')"></div>
+{% assign primary_bg_img_opacity_pct = site.bg_image_primary_opacity | default: 100 %}
+{% assign primary_bg_img_opacity = primary_bg_img_opacity_pct | times: 0.01 %}
+<main class="content">
+    <section class="bullet content__row content__row--full-width">
+        <div class="bullet__background-left">
+            {% assign bg_image_primary_is_not_empty = site.bg_image_primary | is_not_empty %}
+            {% if bg_image_primary_is_not_empty %}
+            <div class="bullet__background-left-img" style="background-image: url('{{ site.bg_image_primary | relative_url }}'); opacity: {{ primary_bg_img_opacity }};"></div>
             {% endif %}
-            <div class="bullet__header">
-                <a href="{{ '/store' | relative_url }}" class="bullet__back-to-store-link">
-                    <svg width="20" height="10" viewBox="0 0 20 10" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.739 4.309h17.011v1.284h-17.11l3.43 3.396-0.895 0.886-4.924-4.875 4.924-4.875 0.895 0.886-3.331 3.298z"></path>
-                    </svg>
-                    see all products
-                </a>
-            </div>
-            <figure class="bullet__figure">
-                
-                {% include picture.html image=page.default_original_image alt=page.title cssClass='bullet__image' %}
-            </figure>
-            <div class="bullet__details">
-                <h1 class="bullet__title">
-                    {{ page.title }}
-                </h1>
-
-                {% assign category_is_not_empty = page.category | is_not_empty %}
-                {% if category_is_not_empty %}
-                    {% assign category_page = page.category | get_page_by_file_path %}
-                    <h2 class="bullet__category">
-                        <a href="{{ category_page.url | relative_url }}"> {{ category_page.title }} </a>
-                    </h2>
-                {% endif %}
-
-                <article class="bullet__description">
-                    {{ page.description | newline_to_br }}
-                </article>
-            </div>
-        </section>
-
-        {% assign category_is_not_empty = page.category | is_not_empty %}
-        {% if category_is_not_empty %}
-            <section class="content__row">
-                <h2 class="content__row-title">Related</h2>
-                {% assign bullet_pages = '/bullets' | get_pages | sort: 'order' | where_exp: "item", "item.id != page.id" %}
-                {% assign category_page = page.category | get_page_by_file_path %}
-
-                {% include product_grid.html bullet_pages=bullet_pages category_url=category_page.url cssClass='store__bullet-grid' site=site %}
-            </section>
+        </div>
+        {% assign bg_image_secondary_is_not_empty = site.bg_image_secondary | is_not_empty %}
+        {% if bg_image_secondary_is_not_empty %}
+        <div class="bullet__background-right" style="background-image: url('{{ site.bg_image_secondary | relative_url }}')"></div>
         {% endif %}
 
-        <a href="{{ '/store' | relative_url }}" class="content__row content__row--full-width content__row--mb-0 bullet__back-to-store"{% assign bg_image_bullet_is_not_empty = site.bg_image_bullet | is_not_empty %}{% if bg_image_bullet_is_not_empty %} style="background-image: url('{{ site.bg_image_bullet | relative_url }}')"{% endif %}>
-            <svg width="20" height="10" viewBox="0 0 20 10" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.739 4.309h17.011v1.284h-17.11l3.43 3.396-0.895 0.886-4.924-4.875 4.924-4.875 0.895 0.886-3.331 3.298z"></path>
-            </svg>
-            see all products
-        </a>
-    </main>
+        <figure class="bullet__figure">
+
+            {% include picture.html image=page.default_original_image alt=page.title cssClass='bullet__image' %}
+        </figure>
+        <div class="bullet__details">
+            <h1 class="bullet__title">
+                {{ page.title }}
+            </h1>
+
+            <article class="bullet__description">
+                {{ page.description | newline_to_br }}
+            </article>
+        </div>
+    </section>
+
+</main>

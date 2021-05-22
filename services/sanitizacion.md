@@ -7,7 +7,7 @@ description: >-
   Sanitizado de superficie y ambientes, por vapor o nebulización.
 default_thumbnail_image: images/iconos/ICOST_A_09.png
 default_original_image: images/iconos/ICOST_A_09.png
-featured: true
+featured: false
 cta:
   title: Cotiza aquí
   url: /services/sanitizacion/cotizar
