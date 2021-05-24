@@ -15,7 +15,7 @@ cta:
   url: /services/pisos/cotizar
   style: secondary
   arrow: false
-category: category/services.md
+category: category/featured_services.md
 seo:
   title: Nulla suscipit
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'

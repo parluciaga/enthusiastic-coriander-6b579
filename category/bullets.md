@@ -1,19 +1,19 @@
 ---
-title: Big plants
+title: Quienes somos
 layout: category
-order: 1
+order: 0
 seo:
-  title: Big plants
-  description: This is the store page
+  title: Quienes somos
+  description: Limpieza profunda para su hogar, empresa o institución
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Big plants
+      value: Quienes somos
       keyName: property
     - name: 'og:description'
-      value: This is the store page
+      value: Limpieza profunda para su hogar, empresa o institución
       keyName: property
     - name: 'og:image'
       value: images/plant1-lg.jpg
@@ -24,7 +24,7 @@ seo:
     - name: 'twitter:title'
       value: Big plants
     - name: 'twitter:description'
-      value: This is the store page
+      value: Limpieza profunda para su hogar, empresa o institución
     - name: 'twitter:image'
       value: images/plant1-lg.jpg
       relativeUrl: true

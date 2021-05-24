@@ -20,10 +20,11 @@ sections:
       - bullets/punto1.md
       - bullets/punto2.md
       - bullets/punto3.md
-  - type: services_section
-    section_id: services_section
+  - type: featured_services_section
+    title: Servicios Destacados
+    section_id: featured_services_section
     services:
-      - category/services.md
+      - category/featured_services.md
   - type: promotion_section
     section_id: promotion_section
     title: Sólo hasta el 30 de febrero

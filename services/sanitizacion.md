@@ -14,7 +14,7 @@ cta:
   style: primary
   arrow: false
 order: 1
-category: category/services.md
+category: category/featured_services.md
 seo:
   title: Nulla suscipit
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'

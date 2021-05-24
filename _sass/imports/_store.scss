@@ -1,4 +1,9 @@
 .store {
+
+    &__svg-path {
+        color: $color_lighter;
+    }
+    
     &__title {
         font-family: $font_family_primary;
         font-size: $font_size_xlarge;
@@ -116,7 +121,7 @@
     .palette-#{$palette} {
         .store {
             &__title {
-                color: $color_darker;
+                color: $color_lighter;
             }
 
             &__nav {

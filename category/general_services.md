@@ -1,10 +1,10 @@
 ---
-title: Plants from Europe
-layout: category
-order: 3
+title: Servicios
+layout: service
+order: 2
 seo:
-  title: Plants from Europe
-  description: This is the store page
+  title: Servicios
+  description: También ofrecemos estos servicios
   extra:
     - name: 'og:type'
       value: website

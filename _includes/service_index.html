@@ -11,7 +11,7 @@
         <section class="store__products">
             {% assign service_pages = '/services' | get_pages | sort: 'order' %}
             
-            {% include service_grid.html service_pages=service_pages category_url=category_url cssClass='store__product-grid' site=site %}
+            {% include service_grid.html inc_service_pages=service_pages category_url=category_url cssClass='store__product-grid' site=site %}
         </section>
     </div>
 </section>
