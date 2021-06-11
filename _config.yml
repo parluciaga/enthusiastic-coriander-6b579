@@ -43,3 +43,4 @@ exclude:
   - netlify.toml
   - stackbit-build.sh
   - stackbit-pull.js
+domain: 'https://enthusiastic-coriander-6b579.netlify.app'
