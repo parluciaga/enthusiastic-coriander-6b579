@@ -5,9 +5,9 @@
     {% for service in services %}
         {% assign service_pages = '/services' | get_pages | sort: 'order' | where: 'featured',true %}
         {% if icon_is_not_empty %}
-            <svg width="29" height="25" viewBox="0 0 29 25" xmlns="http://www.w3.org/2000/svg">
+            <!-- <svg width="29" height="25" viewBox="0 0 29 25" xmlns="http://www.w3.org/2000/svg">
                 <path style="fill: white;" d="M28.152 3.419c-0.939-1.661-6.827-7.221-13.652 0.829-7.168-8.051-12.715-2.49-13.652-0.829-1.707 3.071-0.683 7.719 1.707 9.96l11.947 11.621 11.947-11.621c2.387-2.241 3.411-6.888 1.704-9.96h-0z"></path>
-            </svg>
+            </svg> -->
         {% endif %}
         <h2 class="content__title">{{ section.title }}</h2>
         {% include service_grid.html inc_service_pages=service_pages cssClass=store__product-grid site=site %}

@@ -23,6 +23,7 @@ sections:
   - type: featured_services_section
     title: Servicios Destacados
     section_id: featured_services_section
+    icon: false
     services:
       - category/featured_services.md
   - type: promotion_section

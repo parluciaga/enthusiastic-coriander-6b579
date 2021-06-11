@@ -5,7 +5,7 @@ collections:
   posts:
     permalink: '/posts/:title/'
 favicon:
-logo_dark: images/Logos/LDC_C.png
+logo_dark: images/Logos/LDC_C.jpg
 logo_light: images/Logos/LDC_C.png
 hamburger_background_image: /images/Home/SINFIN_ICO.png
 bg_image_primary: /images/Home/DEG_01.png

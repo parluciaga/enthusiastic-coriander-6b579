@@ -56,7 +56,7 @@
     border-radius: $spacing--unit * 3;
     position: relative;
     padding: 0;
-    cursor: pointer;
+    cursor: default;
     display: block;
     &--featured {
       box-shadow: 0px 20px 52px rgba(0, 0, 0, 0.31);
@@ -94,6 +94,7 @@
     bottom: 15px;
     right: 15px;
     border-color: #3217a0;
+    cursor: pointer;
     border-radius: $spacing--unit * 3;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
     z-index: 1;

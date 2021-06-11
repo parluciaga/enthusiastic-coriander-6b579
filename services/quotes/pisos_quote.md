@@ -1,5 +1,5 @@
 ---
-layout: service
+layout: quote
 id: '1'
 price: '49.40'
 title: Limpieza de pisos
@@ -12,13 +12,13 @@ featured: true
 order: 0
 cta:
   title: Cotiza aquí
-  url: /services/quotes/pisos_quote
+  url: /services/quotes/pisos
   style: secondary
   arrow: false
 category: category/featured_services.md
 seo:
-  title: Nulla suscipit
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+  title: DeepCleaners
+  description: 'Formulario especial para cotizar pisos'
   extra:
     - name: 'og:type'
       value: website
@@ -27,7 +27,7 @@ seo:
       value: Nulla suscipit
       keyName: property
     - name: 'og:description'
-      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      value: 'Formulario especial para cotizar pisos'
       keyName: property
     - name: 'og:image'
       value: images/plant1-lg.jpg
@@ -38,12 +38,12 @@ seo:
     - name: 'twitter:title'
       value: Nulla suscipit
     - name: 'twitter:description'
-      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+      value: 'Formulario especial para cotizar pisos'
     - name: 'twitter:image'
       value: images/plant1-lg.jpg
       relativeUrl: true
 ---
 
-# Nulla suscipit
+# DeepCleaners: Cotizar
 
-Aliquam quis laoreet lectus. Proin non mattis nulla, quis posuere mi. Mauris venenatis, magna at pellentesque commodo, lectus risus vehicula elit, nec dignissim nisl sapien id leo. Nulla non pretium metus, vitae finibus lectus. Aliquam in posuere risus. Curabitur ultrices ornare magna porttitor commodo. Curabitur eu tempor orci, sed pretium quam. Vestibulum condimentum, arcu nec pulvinar fringilla, lorem odio varius arcu, in porta tellus eros sed neque. Suspendisse efficitur eget erat sit amet efficitur. Proin maximus nibh eu sapien consequat, non porttitor risus consequat. Donec maximus odio sed nibh convallis luctus.
+Aquí va un formulario dedicado a cotizar el servicio de limpieza de pisos
