@@ -16,14 +16,14 @@ $color_active_dark:   #547567;
 
 // Alternative palettes
 $theme_palettes: (
-  cyan: (
+  blue: (
     lightest:      #f7f9fb,
     lighter:       #f0f4f8,
     light:         #d8e2ed,
-    medium:        #627d98,
-    dark:          #334e68,
-    darker:        #243b53,
-    active:        #54d1db,
+    medium:        #6460D2,
+    dark:          #211cbe,
+    darker:        #131382,
+    active:        #3217a0,
     active_light:  #bef8fd,
     active_medium: #38bec9,
     active_dark:   #14919b
@@ -43,8 +43,8 @@ $theme_palettes: (
 );
 
 // Font family
-$font_family_primary:   'Open Sans', sans-serif;
-$font_family_secondary: 'Lato', sans-serif;
+$font_family_primary:   'Work Sans', sans-serif;
+$font_family_secondary: 'Roboto', sans-serif;
 
 // Font sizes
 $font_size_xxlarge: 64px;
@@ -55,7 +55,7 @@ $font_size_regular: 20px;
 $font_size_small:   16px;
 
 // Spacing
-$spacing--max-width: 1300px;
+$spacing--max-width: 1900px;
 $spacing--unit:      8px;
 
 // Global styles
@@ -71,9 +71,12 @@ $spacing--unit:      8px;
 @import "imports/nav";
 @import "imports/content";
 @import "imports/product_grid";
+@import "imports/service_grid";
 @import "imports/product";
+@import "imports/bullet";
+@import "imports/bullet_grid";
 @import "imports/store";
-@import "imports/bulletpoints_section";
+@import "imports/bulletpoints";
 @import "imports/page";
 @import "imports/hero";
 @import "imports/faq";
@@ -84,3 +87,4 @@ $spacing--unit:      8px;
 @import "imports/footer";
 @import "imports/promo";
 @import "imports/snipcart";
+@import "imports/contact";

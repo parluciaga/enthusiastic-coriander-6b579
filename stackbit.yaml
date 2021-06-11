@@ -43,10 +43,10 @@ models:
         label: Color Palette
         name: palette
         options:
-          - cyan
+          - blue
           - green
           - yellow
-        default: green
+        default: blue
         required: true
       - type: string
         label: Snipcart public API key

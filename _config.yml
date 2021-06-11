@@ -1,29 +1,29 @@
-title: Planty
+title: DeepCleaners
 baseurl: /
 permalink: '/:title/'
 collections:
   posts:
     permalink: '/posts/:title/'
-favicon: images/favicon.png
-logo_dark: images/logo.svg
-logo_light: images/logo-white.svg
-hamburger_background_image: /images/leaf-light-grey.svg
-bg_image_primary: /images/header.jpg
+favicon:
+logo_dark: images/Logos/LDC_C.jpg
+logo_light: images/Logos/LDC_C.png
+hamburger_background_image: /images/Home/SINFIN_ICO.png
+bg_image_primary: /images/Home/DEG_01.png
 bg_image_primary_opacity: 60
 bg_image_secondary: /images/leaf-light-grey.svg
 bg_image_product: /images/leaf.svg
 snipcart_api_key: ''
-footer_text: Copyright 2021 Planty Inc. All rights reserved.
-palette: green
+footer_text: Copyright 2021 DeepCleaners.
+palette: blue
 main_menu:
-  - title: Store
-    url: /store
+  - title: Servicios
+    url: /services
     style: link
-  - title: About
-    url: /about
+  - title: Blog
+    url: /blog
     style: link
-  - title: FAQ
-    url: /faq
+  - title: Contacto
+    url: /contact
     style: link
 sass:
   style: nested

@@ -2,15 +2,13 @@
 layout: product
 id: '1'
 price: '49.40'
-title: Nulla suscipit
+title: Limpieza de pisos duros
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit velit
-  lectus, vitae efficitur quam mollis eget. Integer porta at nisl eget
-  tincidunt.
-default_thumbnail_image: images/plant1.jpg
-default_original_image: images/plant1-lg.jpg
+  Lavado con detergente, sistema de inyección y extracción
+default_thumbnail_image: images/iconos/ICOST_B_01.png
+default_original_image: images/iconos/ICOST_B_01.png
 featured: true
-order: 1
+order: 0
 category: category/bigplants.md
 seo:
   title: Nulla suscipit

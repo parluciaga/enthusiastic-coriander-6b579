@@ -1,0 +1,31 @@
+<form id="fs-frm" class="contact contact__form" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xrgrelyn" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label class="contact__form-label" for="full-name" aria-label="Nombre">Nombre*</label>
+    <input class="contact__form-input" type="text" name="name" id="full-name" placeholder="Juan Deepcleaner" required oninvalid="this.setCustomValidity('Por favor llene esta información')"
+    onvalid="this.setCustomValidity('')">
+    <label class="contact__form-label" for="email-address" aria-label="Correo">Correo*</label>
+    <input class="contact__form-input" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required oninvalid="this.setCustomValidity('Por favor llene esta información')"
+    onvalid="this.setCustomValidity('')">
+    <label class="contact__form-label" for="email-address" aria-label="Telefono">Teléfono*</label>
+    <input class="contact__form-input" type="text" name="phone" id="phone" placeholder="+56 9 1234 1234" required oninvalid="this.setCustomValidity('Por favor llene esta información')"
+    onvalid="this.setCustomValidity('')">
+    <label class="contact__form-label" for="location" aria-label="ubicación">¿Dónde limpiaremos?</label>
+    <input class="contact__form-input" type="text" name="location" id="location" placeholder="Calle XYZ, Comuna XYZ" >
+    <label class="contact__form-label" for="rooms" aria-label="número de habitaciones">Número de habitaciones</label>
+    <input class="contact__form-input" type="text" name="rooms" id="rooms" placeholder="4" >
+    <label class="contact__form-label" for="surface" aria-label="metros cuadrados">Metros cuadrados aprox.</label>
+    <input class="contact__form-input" type="text" name="surface" id="surface" placeholder="77" >
+    <label class="contact__form-label" for="message">Comentarios</label>
+    <textarea class="contact__form-input" rows="3" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."></textarea>
+    <div class="contact__form-check-group">   
+        <label class="contact__form-check-label" for="signup" aria-label="acepto recibir información"><input type="checkbox" name="signup" id="signup">Acepto recibir información y promociones de deepcleaner</label>    
+    </div>
+    <div class="contact__form-check-group">
+        <label class="contact__form-check-label" for="signup" aria-label="acepto términos y condiciones"><input type="checkbox" name="terms" id="terms">Acepto términos y condiciones</label>      
+    </div>
+    <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+  </fieldset>
+  <button class="contact__form-button" type="submit" value="Enviar">
+    Enviar
+  </button>
+</form>

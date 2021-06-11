@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: linear-gradient( #6fc1cc, #6a99c1 );
 
   &__button {
     width: 100%;
@@ -40,9 +41,11 @@
   &__logo {
     width: 25%;
   }
+
   &__logo-image {
-    height: 45px;
+    height: 100px;
   }
+
   &__total-items {
     @include smaller-than-tablet {
       display: none;
@@ -58,6 +61,7 @@
     align-items: center;
     margin-left: auto;
     text-align: right;
+    padding-right: 1rem;
   }
 
   .button--transparent {
@@ -110,11 +114,13 @@
   left: 0;
   right: 0;
   z-index: 10;
-  padding-top: 50px;
+  padding-top: 0px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
   margin-left: auto;
   margin-right: auto;
   @include smaller-than-tablet {
-    padding-top: 25px;
+    padding-top: 0px;
   }
 }
 
@@ -129,7 +135,7 @@
 }
 
 @each $palette in map-keys($theme_palettes) {
-  .palette-#{$palette} {
+  .palette-#{"" + $palette} {
     .nav {
       &--light {
         color: map-deep-get($theme-palettes, $palette, "lighter");

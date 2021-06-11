@@ -1,0 +1,17 @@
+{% assign section = include.section %}
+    <section class="content__row"  data-id="{{ section.section_id }}" {% assign background_image_is_not_empty = section.background_image | is_not_empty %}{% if background_image_is_not_empty %}style="background-image: url('{{ section.background_image | relative_url }}')"{% endif %} data-id="{{ section.section_id }}">
+        <svg class="content__row-title content__row-title--light" style="margin: auto; position: relative" width="308" height="80" xmlns="http://www.w3.org/2000/svg">
+            <path fill="white" d="M8,3H300L154,45z"></path>
+        </svg>
+        <h2 class="content__row-title{% assign light_title_is_not_empty = section.light_title | is_not_empty %}{% if light_title_is_not_empty %} content__row-title--light{% endif %}">
+            {% assign icon_is_not_empty = section.icon | is_not_empty %}
+            {% if icon_is_not_empty %}
+            
+            {% endif %}
+            {{ section.title }}
+        </h2>
+
+        {% assign bullets = section.bullets %}
+        
+        {% include bullet_grid.html bullet_pages=bullets site=site %}
+    </section>

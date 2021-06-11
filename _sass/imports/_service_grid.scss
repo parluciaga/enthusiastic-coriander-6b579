@@ -1,0 +1,116 @@
+.service-grid {
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  align-items: flex-start;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+
+  &__definition {
+    display: flex;
+    flex-direction: column;
+    color: $color_lighter;
+  }
+
+  &__definition {
+    flex-direction: column;
+    z-index: 11000;
+    p {
+      padding-left: $spacing--unit*5;
+      padding-right: $spacing--unit*5;
+      font-weight: 200;
+      z-index: 11000;
+      display: block;
+      line-height: 2rem;
+    }
+  }
+
+  &__title {
+    margin-top: $spacing--unit;
+    margin-bottom: $spacing--unit*1;
+    font-size: $font_size_large;
+    padding-left: $spacing--unit*2;
+    padding-right: $spacing--unit*2;
+  }
+
+  &__price {
+    margin-top: 15px;
+    font-size: $font_size_medium;
+    color: $color_lighter;
+    font-weight: bold;
+  }
+
+  &__category {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: $font_size_small;
+    color: $color_lighter;
+  }
+
+  &__item-image {
+    width: 100%;
+    background-size: cover;
+    border-radius: $spacing--unit * 3;
+    position: relative;
+    padding: 0;
+    cursor: default;
+    display: block;
+    &--featured {
+      box-shadow: 0px 20px 52px rgba(0, 0, 0, 0.31);
+    }
+    background-color: $color_lighter;
+    margin-top: -$spacing--unit*4;
+    margin-bottom: -$spacing--unit*4;
+  }
+
+  &__item-figure {
+    position: relative;
+  }
+
+  &__item {
+    padding: $spacing--unit*2;
+    width: 100%;
+    background-size: cover;
+    border-radius: $spacing--unit * 4;
+    box-shadow: 0px 20px 52px rgba(0, 0, 0, 0.31);
+    list-style: none;
+    background-color: $color_lighter;
+    margin: 0;
+    margin-bottom: $spacing--unit*5;
+    user-select: none;
+    flex: 1; // Prevents selecting text when scroll is active
+  }
+
+  &__item-link {
+    display: block;
+  }
+
+  &__item-quote {
+    position: relative;
+    @include centered;
+    bottom: 15px;
+    right: 15px;
+    border-color: #3217a0;
+    cursor: pointer;
+    border-radius: $spacing--unit * 3;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+}
+
+@each $palette in map-keys($theme_palettes) {
+  .palette-#{$palette} {
+    .service-grid {
+      &__title,
+      &__price,
+      &__category,
+      &__definition,
+      &__item-quote, {
+        color: map-deep-get($theme-palettes, $palette, "active");
+      }
+    }
+  }
+}

@@ -1,6 +1,11 @@
 .contact {
+  @include container-properties;
+  justify-content: center;
+  text-align: center;
+
   &__section {
-    display: flex;
+    background: linear-gradient(#319db4, #3317a1);
+    max-width: none;
     @include smaller-than-tablet {
       flex-direction: column;
     }
@@ -13,7 +18,6 @@
 
   &__image {
     width: 0;
-    flex: 0.2;
     object-fit: cover;
     @include smaller-than-tablet {
       max-height: 300px;
@@ -22,17 +26,114 @@
     }
   }
 
+  &__form {
+    color: $color_lighter;
+    margin-bottom: $spacing--unit;
+    font-weight: 400;
+    padding-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: $spacing--unit*2;
+    padding-right: $spacing--unit*2;
+
+    &--light {
+      color: $color_lighter;
+    }
+
+    &--dark {
+      color: $color_lighter;
+    }
+
+    &--medium {
+      color: $color_lighter;
+    }
+  }
+
   &__title {
     line-height: 56px;
+    width: 100%;
+    display: block;
     font-family: $font_family_primary;
     font-size: 46px;
     color: $color_darker;
     margin-bottom: 50px;
+    margin-top: 30px;
     @include smaller-than-tablet {
       font-size: $font_size_medium;
       margin-bottom: 25px;
       line-height: 29px;
     }
+  }
+
+  &__subtitle {
+    font-size: $font_size_large;
+    margin-bottom: $spacing--unit * 6;
+    @include smaller-than-tablet {
+      font-size: $font_size_medium;
+    }
+    font-weight: 100;
+    padding-left: $spacing--unit*2;
+    padding-right: $spacing--unit*2;
+  }
+
+  &__form {
+    &-input {
+      border-radius: $spacing--unit;
+      display: block;
+      margin-bottom: $spacing--unit*2 ;
+      width: 100%;
+      font-size: large;
+      line-height: 1.5rem;
+      padding-left: $spacing--unit*2;
+      padding-right: $spacing--unit*2;
+    }
+
+    &-label {
+      border-radius: $spacing--unit;
+      justify-content: left;
+      text-align: left;
+      display: block;
+      margin-bottom: $spacing--unit;
+      margin-top: $spacing--unit;
+    }
+
+    &-button {
+      border-radius: $spacing--unit*4;
+      border-width: 3px;
+      border-color: $color_lighter;
+      color: $color_lighter;
+      font-size: $font_size_large;
+      background-color: transparent;
+      padding-left: $spacing--unit*2;
+      padding-right: $spacing--unit*2;
+
+    }
+
+    &-check-group {
+      margin-bottom: $spacing--unit*2;
+    }
+
+    &-check-label {
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 4rem;
+      position: relative;
+      text-align: left;
+      margin-bottom: $spacing--unit*2;
+
+      input {
+        width: 3rem;
+        height: 3rem;
+        left: 0;
+        top: 0;
+        position: absolute;
+      }
+    }
+    
+  
+
+
+
   }
 
   &__text-container {
@@ -104,8 +205,8 @@
     grid-column: 2;
     width: 1px;
     background-color: $color_light;
-    margin-right: $spacing--unit*8;
-    margin-left: $spacing--unit*8;
+    margin-right: $spacing--unit * 8;
+    margin-left: $spacing--unit * 8;
   }
 }
 
@@ -114,20 +215,28 @@
     .contact {
       &__section {
         &:last-child {
-          background-color: map-deep-get($theme-palettes, $palette, "dark");
+          background-color: map-deep-get($theme-palettes, $palette, "lighter");
         }
       }
 
       &__title {
-        color: map-deep-get($theme-palettes, $palette, "darker");
+        color: map-deep-get($theme-palettes, $palette, "lighter");
+      }
+
+      &__subtitle {
+        color: map-deep-get($theme-palettes, $palette, "lighter");
+      }
+
+      &__form-label {
+        color: map-deep-get($theme-palettes, $palette, "lighter");
       }
 
       &__text-container {
-        color: map-deep-get($theme-palettes, $palette, "medium");
+        color: map-deep-get($theme-palettes, $palette, "lighter");
       }
 
       &__separator {
-        background-color: map-deep-get($theme-palettes, $palette, "light");
+        background-color: map-deep-get($theme-palettes, $palette, "lighter");
       }
     }
   }

@@ -2,10 +2,15 @@
 {% assign bg_img_opacity_pct = section.background_image_opacity | default: 100 %}
 {% assign bg_img_opacity = bg_img_opacity_pct | times: 0.01 %}
 <section class="hero bg-color" data-id="{{ section.section_id }}">
-    {% assign background_image_is_not_empty = section.background_image | is_not_empty %}
-    {% if background_image_is_not_empty %}
+    
+  {% assign front_image_is_not_empty = section.front_image | is_not_empty %}
+  {% if front_image_is_not_empty %}
+    <div class="hero__bg-img" style="image: url('{{ section.front_image | relative_url }}'); opacity: {{ bg_img_opacity }};"></div>
+  {% endif %}
+  {% assign background_image_is_not_empty = section.background_image | is_not_empty %}
+  {% if background_image_is_not_empty %}
     <div class="hero__bg-img" style="background-image: url('{{ section.background_image | relative_url }}'); opacity: {{ bg_img_opacity }};"></div>
-    {% endif %}
+  {% endif %}
     <div class="hero__title">{{ section.content | markdownify }}</div>
     <div class="hero__links link-group">
       {% for action in section.actions %}

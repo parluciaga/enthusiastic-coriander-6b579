@@ -1,6 +1,6 @@
 .footer {
   @include container-properties;
-  background-color: $color_dark;
+  background-color: $color_darker;
 
   &__container { 
       @include container-item-properties;
@@ -34,11 +34,13 @@
   &__logo-image {
     display: block;
     max-height: 45px;
+    border-radius: $spacing--unit;
   }
 
   &__nav-link { 
     color: $color_medium;
     font-weight: bold;
+    
 }
 
   &__legal-notice {
@@ -54,11 +56,15 @@
 @each $palette in map-keys($theme_palettes) {
   .palette-#{$palette} {
     .footer {
-      background-color: map-deep-get($theme-palettes, $palette, "dark");
+      background-color: map-deep-get($theme-palettes, $palette, "darker");
 
       &__nav-link,
       &__legal-notice {
         color: map-deep-get($theme-palettes, $palette, "medium");
+      }
+
+      &__logo-image {
+        color: map-deep-get($theme-palettes, $palette, "dark");
       }
     }
   }

@@ -1,0 +1,35 @@
+---
+layout: body
+---
+
+{% assign primary_bg_img_opacity_pct = site.bg_image_primary_opacity | default: 100 %}
+{% assign primary_bg_img_opacity = primary_bg_img_opacity_pct | times: 0.01 %}
+<main class="content">
+    <section class="bullet content__row content__row--full-width">
+        <div class="bullet__background-left">
+            {% assign bg_image_primary_is_not_empty = site.bg_image_primary | is_not_empty %}
+            {% if bg_image_primary_is_not_empty %}
+            <div class="bullet__background-left-img" style="background-image: url('{{ site.bg_image_primary | relative_url }}'); opacity: {{ primary_bg_img_opacity }};"></div>
+            {% endif %}
+        </div>
+        {% assign bg_image_secondary_is_not_empty = site.bg_image_secondary | is_not_empty %}
+        {% if bg_image_secondary_is_not_empty %}
+        <div class="bullet__background-right" style="background-image: url('{{ site.bg_image_secondary | relative_url }}')"></div>
+        {% endif %}
+
+        <figure class="bullet__figure">
+
+            {% include picture.html image=page.default_original_image alt=page.title cssClass='bullet__image' %}
+        </figure>
+        <div class="bullet__details">
+            <h1 class="bullet__title">
+                {{ page.title }}
+            </h1>
+
+            <article class="bullet__description">
+                {{ page.description | newline_to_br }}
+            </article>
+        </div>
+    </section>
+
+</main>

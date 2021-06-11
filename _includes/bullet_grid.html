@@ -1,0 +1,9 @@
+{% assign site = include.site %}
+{% assign bullet_pages = include.bullet_pages %}
+{% assign listCssClass = include.cssClass %}
+<ul class="bullet-grid {% assign listCssClass_is_not_empty = listCssClass | is_not_empty %}{% if listCssClass_is_not_empty %}{{ listCssClass }}{% endif %}">
+    {% for bullet in bullet_pages %}
+        {% assign bullet_page = bullet | get_page_by_file_path %}
+                {% include bullet_grid_item.html bullet_page=bullet_page site=site %}  
+    {% endfor %}
+</ul>

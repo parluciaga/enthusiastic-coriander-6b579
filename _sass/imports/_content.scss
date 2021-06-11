@@ -1,49 +1,77 @@
 .content {
     @include container-properties;
     padding-top: 101px;
+    justify-content: center;
+    text-align: center;
+
+    &__title {
+        color: $color_lighter;
+        margin-bottom: $spacing--unit*4;
+        font-size: $font_size_xlarge;
+        font-weight: 400;
+        padding-top: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+        
+        &--light {
+            color: $color_lighter;
+        }
+
+        &--dark {
+            color: $color_lighter;
+        }
+
+        &--medium {
+            color: $color_lighter;
+        }
+    }
 
     &__row {
         @include container-item-properties;
-        margin-bottom: 50px;
-        position: relative;
+        padding-bottom: 50px;
+        background-color: #3217a0;
+        background-repeat: round;
+        background-size: 500px;
+        background-position: top left;
         &--direction-row { display: flex; flex-direction: row; }
         &--full-width         { max-width: none; padding: 0; }
         &--mb-0         { margin-bottom: 0; }
         @include smaller-than-tablet {
             overflow: hidden;
+        
         }
     }
 
     &__row-title {
-        color: $color_medium;
-        margin-bottom: $spacing--unit*7;
-        font-size: $font_size_large;
+        color: $color_lighter;
+        margin-bottom: $spacing--unit*4;
+        font-size: $font_size_xlarge;
+        font-weight: 400;
+        padding-top: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
 
         &--light {
             color: $color_lighter;
         }
 
         &--dark {
-            color: $color_dark;
+            color: $color_lighter;
         }
 
         &--medium {
-            color: $color_medium;
-        }
-
-        svg {
-            color: inherit;
-            margin-right: 10px;
-            fill: currentColor;
+            color: $color_lighter;
         }
     }
+    
 }
 
 @each $palette in map-keys($theme_palettes) {
-    .palette-#{$palette} {
+    .palette-#{"" + $palette} {
         .content {
             &__row-title {
-                color: map-deep-get($theme-palettes, $palette, "medium");
+                color: map-deep-get($theme-palettes, $palette, "lighter");
 
                 &--light {
                     color: map-deep-get($theme-palettes, $palette, "lighter");
@@ -57,6 +85,7 @@
                     color: map-deep-get($theme-palettes, $palette, "medium");
                 }
             }
+            background-color: map-deep-get($theme-palettes, $palette, "medium");
         }
     }
 }

@@ -2,15 +2,13 @@
   &__section {
     &:last-child {
       margin-bottom: 0;
-
-      picture {
-        background-color: $color_dark;
-      }
+      background-color: #211cbe;
     }
   }
 
   display: flex;
   width: 100%;
+  overflow: auto;
 
   picture {
     flex: 1;
@@ -19,7 +17,17 @@
     object-fit: cover;
 
     img {
-      width: 100%;
+      max-width: 100%;
+      max-block-size: 300px;
+    }
+  }
+
+  &__row {
+    &--direction-row { display: flex; flex-direction: row; }
+    &--full-width         { max-width: none; padding: 0; }
+    &--mb-0         { margin-bottom: 0; }
+    @include smaller-than-tablet {
+        overflow: hidden;
     }
   }
 
@@ -27,14 +35,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: $spacing--unit*4;
     flex: 1;
     width: 0;
     padding: 80px;
-    color: $color_default;
-    background-color: $color_active;
-    background-size: auto 400%;
-    background-position: center;
+    color: $color_lighter;
   }
 
   &__title {
@@ -53,6 +58,15 @@
     @include smaller-than-tablet {
       font-size: $font_size_medium;
     }
+  }
+
+  &__item {
+    padding: $spacing--unit*2;
+    background-size: cover;
+    list-style: none;
+    margin: 0;
+    margin-bottom: $spacing--unit*3;
+    user-select: none; // Prevents selecting text when scroll is active
   }
 
   @include smaller-than-tablet {
@@ -77,6 +91,7 @@
 @each $palette in map-keys($theme_palettes) {
   .palette-#{$palette} {
     .promo {
+      background-color: map-deep-get($theme-palettes, $palette, "dark");
       &__section {
         &:last-child {
           picture {
@@ -86,7 +101,7 @@
       }
 
       &__message-container {
-        background-color: map-deep-get($theme-palettes, $palette, "active");
+        background-color: map-deep-get($theme-palettes, $palette, "dark");
       }
     }
   }
