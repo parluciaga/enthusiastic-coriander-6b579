@@ -1,0 +1,12 @@
+---
+layout: body
+---
+
+<main class="content{% assign page_css_class_is_not_empty = page.page_css_class | is_not_empty %}{% if page_css_class_is_not_empty %} {{ page.page_css_class }}{% endif %}" {% assign background_image_is_not_empty = page.background_image | is_not_empty %}{% if background_image_is_not_empty %}style="background-image: url('{{ page.background_image | relative_url }}')"{% endif %}>
+    {% for section in page.sections %}
+        <h3 class="contact__title">{{section.title}}</h3>
+        <p class="contact__subtitle">{{section.subtitle}}</p>
+    {% assign component = section.type | append: ".html" %}
+    {% include {{ component }} section=section page=page site=site %}
+    {% endfor %}
+</main>

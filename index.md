@@ -28,7 +28,7 @@ sections:
       - category/featured_services.md
   - type: promotion_section
     section_id: promotion_section
-    title: Sólo hasta el 30 de febrero
+    title: Promoción del mes
     subtitle: 20% de descuento en plan Deep Full
     image: images/Home/DEEPFULL.png
     cta:

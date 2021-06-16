@@ -16,11 +16,11 @@ snipcart_api_key: ''
 footer_text: Copyright 2021 DeepCleaners.
 palette: blue
 main_menu:
+  - title: Inicio
+    url: /
+    style: link
   - title: Servicios
     url: /services
-    style: link
-  - title: Blog
-    url: /blog
     style: link
   - title: Contacto
     url: /contact

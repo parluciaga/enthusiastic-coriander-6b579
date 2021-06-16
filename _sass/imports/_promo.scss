@@ -43,11 +43,12 @@
   }
 
   &__title {
-    font-family: $font_family_primary;
+    font-family: $font_family_secondary;
     font-size: $font_size_xlarge;
-    font-weight: bold;
+    font-weight: lighter;
     @include smaller-than-tablet {
       font-size: $font_size_large;
+      font-weight: 100;
     }
   }
 
@@ -60,14 +61,27 @@
     }
   }
 
-  &__item {
+  &__link {
     padding: $spacing--unit*2;
     background-size: cover;
     list-style: none;
+    border: 2px solid $color_active;
     margin: 0;
     margin-bottom: $spacing--unit*3;
+    border-radius: $spacing--unit * 3;
     user-select: none; // Prevents selecting text when scroll is active
   }
+
+  &__item-button {
+    position: relative;
+    @include centered;
+    bottom: 15px;
+    right: 15px;
+    border-color: #3217a0;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }   
 
   @include smaller-than-tablet {
     flex-direction: column;

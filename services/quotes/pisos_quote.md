@@ -8,7 +8,7 @@ description: >-
 default_thumbnail_image: images/iconos/ICOST_A_01.png
 default_original_image: images/iconos/ICOST_A_01.png
 background_image: images/iconos/ICOST_A_01.png
-featured: true
+featured: false
 order: 0
 cta:
   title: Cotiza aquí
