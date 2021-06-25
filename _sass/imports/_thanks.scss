@@ -1,0 +1,42 @@
+.thanks {
+
+    &__body {
+        flex: 1 1 auto;
+        align-items: center;
+    }
+}
+
+@each $palette in map-keys($theme_palettes) {
+    .palette-#{$palette} {
+        .thanks {
+            &__title {
+                color: $color_lighter;
+            }
+
+            &__nav {
+                background-color: map-deep-get($theme-palettes, $palette, "lightest");
+
+                &:before {
+                    background-color: map-deep-get($theme-palettes, $palette, "lightest");
+                }
+
+                @include smaller-than-tablet {
+                    background-color: transparent;
+                    border-bottom-color: map-deep-get($theme-palettes, $palette, "light");
+                    border-top-color: map-deep-get($theme-palettes, $palette, "light");
+                }
+            }
+
+            &__nav-item-link {
+                @include smaller-than-tablet {
+                    color: map-deep-get($theme-palettes, $palette, "medium");
+                }
+        
+                &--active {
+                    color: map-deep-get($theme-palettes, $palette, "darker");
+                    border-bottom-color: map-deep-get($theme-palettes, $palette, "active");
+                }
+            }
+        }
+    }
+}

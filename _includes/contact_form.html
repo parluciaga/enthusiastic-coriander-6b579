@@ -1,29 +1,31 @@
-<form id="fs-frm" class="contact contact__form" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xrgrelyn" method="post">
+<form clss="contact contact__form" netlify-honeypot="bot-field"
+  name="escribenos" accept-charset="utf-8" action="thanks.html" netlify>
   <fieldset id="fs-frm-inputs">
     <label class="contact__form-label" for="full-name" aria-label="Nombre">Nombre*</label>
-    <input class="contact__form-input" type="text" name="name" id="full-name" placeholder="Juan Deepcleaner" required oninvalid="this.setCustomValidity('Por favor llene esta información')"
-    onvalid="this.setCustomValidity('')">
+    <input class="contact__form-input" type="text" name="Nombre" id="full-name" placeholder="Juan Deepcleaner" required oninvalid="this.setCustomValidity('Por favor llene esta información')">
     <label class="contact__form-label" for="email-address" aria-label="Correo">Correo*</label>
-    <input class="contact__form-input" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required oninvalid="this.setCustomValidity('Por favor llene esta información')"
+    <input class="contact__form-input" type="email" name="email" id="email-address" placeholder="email@domain.tld" required oninvalid="this.setCustomValidity('Por favor llene esta información')"
     onvalid="this.setCustomValidity('')">
     <label class="contact__form-label" for="email-address" aria-label="Telefono">Teléfono*</label>
-    <input class="contact__form-input" type="text" name="phone" id="phone" placeholder="+56 9 1234 1234" required oninvalid="this.setCustomValidity('Por favor llene esta información')"
+    <input class="contact__form-input" type="text" name="Telefono" id="phone" placeholder="+56 9 1234 1234" required oninvalid="this.setCustomValidity('Por favor llene esta información')"
     onvalid="this.setCustomValidity('')">
     <label class="contact__form-label" for="location" aria-label="ubicación">¿Dónde limpiaremos?</label>
-    <input class="contact__form-input" type="text" name="location" id="location" placeholder="Calle XYZ, Comuna XYZ" >
+    <input class="contact__form-input" type="text" name="Ubicacion" id="location" placeholder="Calle XYZ, Comuna XYZ" >
     <label class="contact__form-label" for="rooms" aria-label="número de habitaciones">Número de habitaciones</label>
-    <input class="contact__form-input" type="text" name="rooms" id="rooms" placeholder="4" >
+    <input class="contact__form-input" type="text" name="Habitaciones" id="rooms" placeholder="4" >
     <label class="contact__form-label" for="surface" aria-label="metros cuadrados">Metros cuadrados aprox.</label>
-    <input class="contact__form-input" type="text" name="surface" id="surface" placeholder="77" >
+    <input class="contact__form-input" type="text" name="m2" id="surface" placeholder="77" >
     <label class="contact__form-label" for="message">Comentarios</label>
-    <textarea class="contact__form-input" rows="3" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."></textarea>
-    <div class="contact__form-check-group">   
-        <label class="contact__form-check-label" for="signup" aria-label="acepto recibir información"><input type="checkbox" name="signup" id="signup">Acepto recibir información y promociones de DeepCleaners</label>    
-    </div>
+    <textarea class="contact__form-input" rows="3" name="Comentarios" id="message" placeholder="Ingrese aquí sus comentarios"></textarea>
+      <p style="display:none;">
+        <label>Campo invisible <input name="bot-field"></label>
+      </p>
     <div class="contact__form-check-group">
-        <label class="contact__form-check-label" for="signup" aria-label="acepto términos y condiciones"><input type="checkbox" name="terms" id="terms">Acepto términos y condiciones</label>      
-    </div>
-    <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+      <label class="contact__form-check-label" for="signup" aria-label="acepto
+          recibir información"><input type="checkbox" name="signup"
+          id="signup">Acepto recibir información y promociones de
+        DeepCleaners</label>
+    <div>
   </fieldset>
   <button class="contact__form-button" type="submit" value="Enviar">
     Enviar
