@@ -4,9 +4,8 @@
 <form class="contact contact__form" netlify-honeypot="bot-field"
   name="escribenos" accept-charset="utf-8" action="thanks.html" netlify>
   <fieldset id="fs-frm-inputs">
-    <p style="display:none;">
-    <label>Formuario para<input name="solicitud">{{ subject
-      }}</input></label> </p> 
+    <!-- <p style="display:none;"> -->
+    <label>Formulario para {{subject}}</label> <!-- </p>  -->
     <label class="contact__form-label" for="full-name" aria-label="Nombre">Nombre*</label>
     <input class="contact__form-input" type="text" name="Nombre" id="full-name" placeholder="Juan Deepcleaner" required oninvalid="this.setCustomValidity('Por favor llene esta información')">
     <label class="contact__form-label" for="email-address" aria-label="Correo">Correo*</label>

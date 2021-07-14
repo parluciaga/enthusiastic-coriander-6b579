@@ -40,6 +40,7 @@ sections:
     section_id: contact_section
     title: ESCRIBENOS
     subtitle: Llena el formulario para que podamos cotizar lo que necesitas
+    subject: Asunto
     address: Dirección
     phone: Teléfono
     email: Correo

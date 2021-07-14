@@ -1,5 +1,5 @@
 ---
-layout: service
+layout: quote
 id: '1'
 price: '49.40'
 title: Limpieza de pisos

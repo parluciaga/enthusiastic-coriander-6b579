@@ -1,7 +1,8 @@
 {% assign section = include.section %}
+{% assign subject = section.subject %}  
 <section class="contact contact__section" data-id="{{ section.section_id }}">
   {% assign image_is_not_empty = section.image | is_not_empty %}{% if image_is_not_empty %}<img src="{{ section.image | relative_url }}" alt="" class="contact__image">{% endif %}
   <h3 class="contact__title">{{section.title}}</h3>
   <p class="contact__subtitle">{{section.subtitle}}</p>
-  {% include contact_form.html subject="Limpieza de Pisos" %}
+  {% include contact_form.html subject=subject %}
 </section>

@@ -1,8 +1,7 @@
 {% assign product_page = include.product_page %}
 
 <button class="button button--std snipcart-add-item"
-    data-item-name="{{ product_page.title }}"
-    data-item-url="{{ product_page.url }}"
+    data-item-name="{{ product_page.title }}" data-item-url="{{ product_page.url }}"
     data-item-price="{{ product_page.price }}"
     {% assign default_thumbnail_image_is_not_empty = product_page.default_thumbnail_image | is_not_empty %}{% if default_thumbnail_image_is_not_empty %} data-item-image="{{ product_page.default_thumbnail_image | relative_url }}" {% endif %}
     data-item-description="{{ product_page.description }}"
