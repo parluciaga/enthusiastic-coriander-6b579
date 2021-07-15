@@ -1,6 +1,6 @@
 ---
 title: Lavado de Alfombras
-layout: product
+layout: quote
 order: 12
 cta:
   title: Cotiza aquí

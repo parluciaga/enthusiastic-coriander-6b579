@@ -1,6 +1,6 @@
 ---
 title: Limpieza Baño
-layout: product
+layout: quote
 order: 5
 cta:
   title: Cotiza aquí

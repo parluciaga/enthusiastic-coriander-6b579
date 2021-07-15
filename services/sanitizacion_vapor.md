@@ -1,6 +1,6 @@
 ---
 title: Sanitización con Vapor
-layout: product
+layout: quote
 order: 10
 cta:
   title: Cotiza aquí

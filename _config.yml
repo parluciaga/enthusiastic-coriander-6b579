@@ -1,9 +1,6 @@
 title: DeepCleaners
 baseurl: /
 permalink: '/:title/'
-collections:
-  posts:
-    permalink: '/posts/:title/'
 favicon:
 logo_dark: images/Logos/LDC_C.jpg
 logo_light: images/Logos/LDC_C.png

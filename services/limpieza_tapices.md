@@ -1,6 +1,6 @@
 ---
 title: Limpieza de Tapices
-layout: product
+layout: quote
 order: 8
 cta:
   title: Cotiza aquí

@@ -1,6 +1,6 @@
 ---
 title: Extracción de ácaros
-layout: product
+layout: quote
 order: 3
 cta:
   title: Cotiza aquí

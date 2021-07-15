@@ -1,6 +1,6 @@
 ---
 title: Limpieza de Tapices de Auto
-layout: product
+layout: quote
 order: 9
 cta:
   title: Cotiza aquí

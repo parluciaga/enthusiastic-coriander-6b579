@@ -1,6 +1,6 @@
 ---
 title: Sanitización por Nebulización
-layout: product
+layout: quote
 order: 11
 cta:
   title: Cotiza aquí

@@ -1,6 +1,6 @@
 ---
 title: Limpieza de Pisos Laminados
-layout: product
+layout: quote
 order: 4
 cta:
   title: Cotiza aquí

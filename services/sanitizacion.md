@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: quote
 id: '2'
 price: '49.40'
 title: Sanitización

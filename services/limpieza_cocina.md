@@ -1,6 +1,6 @@
 ---
 title: Limpieza Cocina
-layout: product
+layout: quote
 order: 6
 cta:
   title: Cotiza aquí
