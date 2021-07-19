@@ -5,13 +5,20 @@
   name="escribenos" accept-charset="utf-8" action="thanks.html" netlify>
   <fieldset id="fs-frm-inputs">
     <label class="contact__form-label" for="full-name" aria-label="Nombre">Nombre*</label>
-    <input class="contact__form-input" type="text" name="Nombre" id="full-name" placeholder="Juan Deepcleaner" required oninvalid="this.setCustomValidity('Por favor llene esta información')">
+    <input class="contact__form-input" type="text" name="Nombre" id="full-name"
+                                                                 placeholder="Juan
+                                                                 Deepcleaner"
+                                                                 required > 
     <label class="contact__form-label" for="email-address" aria-label="Correo">Correo*</label>
-    <input class="contact__form-input" type="email" name="email" id="email-address" placeholder="email@domain.tld" required oninvalid="this.setCustomValidity('Por favor llene esta información')"
-    onvalid="this.setCustomValidity('')">
+    <input class="contact__form-input" type="email" name="email"
+                                                    id="email-address"
+                                                    placeholder="email@domain.tld"
+                                                    required>
     <label class="contact__form-label" for="email-address" aria-label="Telefono">Teléfono*</label>
-    <input class="contact__form-input" type="text" name="Telefono" id="phone" placeholder="+56 9 1234 1234" required oninvalid="this.setCustomValidity('Por favor llene esta información')"
-    onvalid="this.setCustomValidity('')">
+    <input class="contact__form-input" type="text" name="Telefono" id="phone"
+                                                                   placeholder="+56
+                                                                   9 1234 1234"
+                                                                   required>
     <label class="contact__form-label" for="location" aria-label="ubicación">¿Dónde limpiaremos?</label>
     <input class="contact__form-input" type="text" name="Ubicacion" id="location" placeholder="Calle XYZ, Comuna XYZ" >
     <label class="contact__form-label" for="rooms" aria-label="número de habitaciones">Número de habitaciones</label>
@@ -34,4 +41,4 @@
   <button class="contact__form-button" type="submit" value="Enviar">
     Enviar
   </button>
-</iorm>
+</form>
