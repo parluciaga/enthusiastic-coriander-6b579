@@ -4,7 +4,7 @@ layout: contact
 sections:
   - type: contact_form
     title: Contáctanos
-    subtitle: Llena el formulario o llámanos al +56 9 1111 2222
+    subtitle: Llena el formulario o llámanos al +56 9 9848 7972
     section_id: contact_form
 seo:
   title: Contacto

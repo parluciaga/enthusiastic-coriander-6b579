@@ -1,6 +1,6 @@
 ---
 title: Limpieza de Colchones
-layout: product
+layout: quote
 order: 7
 cta:
   title: Cotiza aquí

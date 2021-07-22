@@ -31,11 +31,6 @@ sections:
     title: Promoción del mes
     subtitle: 20% de descuento en plan Deep Full
     image: images/Home/DEEPFULL.png
-    cta:
-      title: Ver detalles
-      url: /store
-      style: secondary
-      arrow: false
   - type: contact_section
     section_id: contact_section
     title: ESCRIBENOS
